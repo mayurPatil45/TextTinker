@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 
 export default function TextForm(props) {
-    // by default all normal variables are not upadated with page reloading by react but state variables {hooks} are upadated by react without page  reloading
     const upClick = () => {
-        // console.log("that button was clicked" , Text);
         let upperCase = Text.toUpperCase()
         setText(upperCase)
         props.showAlert('success', 'Text to UpperCase done')
 
     }
     const lowClick = () => {
-        // console.log("that button was clicked" , Text);
         let lowerCase = Text.toLowerCase()
         setText(lowerCase)
         props.showAlert('success', 'Text to LowerCase done')
@@ -20,37 +17,20 @@ export default function TextForm(props) {
         props.showAlert('primary', 'All Cleared')
     }
     const copy = () => {
-        // let text = document.getElementById("yoyo")
-        // text.select()
-        // navigator.clipboard.writeText(text.value)
         navigator.clipboard.writeText(Text)
         props.showAlert('success', 'Text Copied to your clipboard')
     }
-    // setText original Text ki value upadate krney mien kaam aati hia Original Text hi update hota hai so original Text hi print hoga if we try to print ,setText cannot be printed it just a medium/refernce/way to update the original Text
-    // setText just dispplay the updated value on the screen
     const saveFile = () => {
-        // Create a Blob containing the text
         const blob = new Blob([Text], { type: "text/plain" });
-
-        // Create an object URL from the Blob
         const url = window.URL.createObjectURL(blob);
-
-        // Create an anchor element to trigger the download
         const a = document.createElement("a");
         a.href = url;
         a.download = "text.txt";
-
-        // Trigger a click event on the anchor element
         a.click();
-
-        // Release the object URL
         window.URL.revokeObjectURL(url);
     }
 
     const handleOnChange = (e) => {
-        // console.log("change hua hia kuch");
-        // pehley to set text ki value thi + jo abhi event se jo value aayi
-        // isesey setText(ki value) bhi upadte hoti jaayegi[Actually mien original Text hi hai jo update hota h] , new SetText() each time
         setText(e.target.value)
 
     }
@@ -75,6 +55,7 @@ export default function TextForm(props) {
             }
         }
         setText(modifiedText);
+        props.showAlert('success', 'Text to ProperCase done')
     }
     const isLetter = (e) => {
         return (e >= 'a' && e <= 'z') || (e >= 'A' && e <= 'Z');
@@ -93,6 +74,7 @@ export default function TextForm(props) {
             }
         }
         setText(modifiedText);
+        props.showAlert('success', 'Text to SentenceCase done')
     }
     
     const [Text, setText] = useState("");

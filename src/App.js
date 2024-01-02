@@ -46,7 +46,6 @@ function App() {
       setModeText('Enable Dark Mode')
       document.body.style.backgroundColor = 'white'
       showAlert('success', 'Light Mode has been Enabled')
-
     }
   }
 

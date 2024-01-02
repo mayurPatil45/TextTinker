@@ -19,7 +19,6 @@ export default function Navbar(props) {
             <li className="nav-item">
               <Link className="nav-link" to="/about">{props.about}</Link>
             </li>
-
           </ul>
           <div className="form-check form-switch mx-2">
             <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
@@ -37,6 +36,6 @@ Navbar.propTypes = {
 }
 
 Navbar.defaultProps = {
-  title: 'title yha aayayega',
-  about: 'about yha'
+  title: 'TextTinker',
+  about: 'TextTinker is a great utility for manipulating your text'
 }

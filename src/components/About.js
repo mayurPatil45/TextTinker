@@ -20,7 +20,7 @@ export default function About(props) {
               </h2>
               <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sit temporibus aspernatur in, laudantium adipisci rerum quasi maiores blanditiis dolores a distinctio fugit porro fugiat?
+                  Welcome to Texttinker, your go-to tool for transforming text effortlessly! We understand the power of words and how they can shape your message. With Texttinker, we empower you to analyze and modify text to suit your needs, providing a versatile platform for enhancing your communication.
                 </div>
               </div>
             </div>
@@ -32,7 +32,7 @@ export default function About(props) {
               </h2>
               <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio adipisci at ad ducimus ipsa laudantium! Ab dolore, quod iusto omnis maxime quaerat possimus alias laborum, totam nobis reprehenderit architecto odit quas quam veniam magni quia consequatur, non facere numquam culpa! Obcaecati sed consectetur possimus veniam?
+                  Texttinker is committed to making text transformation accessible to everyone. That's why we've made our tool completely free to use. No hidden fees, no subscriptions – just a simple and powerful text manipulation tool at your fingertips. Whether you're a student, professional, or casual user, Texttinker is here for you, providing a seamless experience without any cost barriers.
                 </div>
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function About(props) {
               </h2>
               <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div className="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maiores nulla accusantium, illum enim doloribus similique, quidem distinctio eligendi, magnam nihil vero animi eos officiis libero nemo totam repudiandae accusamus. Suscipit totam facere corrupti accusamus deleniti sapiente. Fuga, alias quaerat quidem, repudiandae aliquid vero quo nostrum libero repellendus aspernatur neque obcaecati et voluptatum voluptate cum.
+                  Curious to explore the features and capabilities of Texttinker further? Our 'Read More' section is designed just for you. Dive into in-depth guides, tutorials, and tips on how to make the most of our tool. Discover advanced techniques, explore creative applications, and unlock the full potential of text transformation. We're not just a tool; we're your partner in crafting compelling content. Join us on this linguistic journey with Texttinker, where words transform and ideas come to life. Let your creativity flow as you analyze, enjoy the freedom of our free-to-use platform, and delve deeper into the possibilities with our 'Read More' section. Texttinker – where text meets innovation!
                 </div>
               </div>
             </div>
